@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="gallery-title">Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+    <div class="gallery">
+    <img src="https://img.freepik.com/free-photo/lake-mountains_1204-502.jpg" alt="Nature 1" data-category="nature">
+    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=" alt="Nature 2" data-category="nature">
+    <img src="https://burst.shopifycdn.com/photos/chicago-city-lights-at-night.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="City 1" data-category="city">
+    <img src="https://img.freepik.com/free-photo/new-york-city_649448-1679.jpg" alt="City 2" data-category="city">
+    <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?cs=srgb&dl=pexels-pixabay-45170.jpg&fm=jpg" alt="Animals 1" data-category="animals">
+    <img src="https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?cs=srgb&dl=pexels-pixabay-34098.jpg&fm=jpg" alt="Animals 2" data-category="animals">
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
